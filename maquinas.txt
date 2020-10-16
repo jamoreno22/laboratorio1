@@ -1,0 +1,17 @@
+Máquina 1
+ip/hostname:10.10.28.17
+contraseña:MwKgWFGDPJgROSs
+
+Máquina 2
+ip/hostname:10.10.28.18
+contraseña:ocEsqHkwHTEKAXW
+
+Máquina 3
+ip/hostname:10.10.28.19
+contraseña:rLEneBgvVqRDKvh
+
+Máquina 4
+ip/hostname:10.10.28.20
+contraseña:sljLZDvwJBXAkzn
+
+El usuario de las máquinas es: sd
