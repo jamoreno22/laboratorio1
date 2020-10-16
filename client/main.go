@@ -12,7 +12,7 @@ import (
 func main() {
 	log.Println("Client running ...")
 
-	conn, err := grpc.Dial(":50051", grpc.WithInsecure(), grpc.WithBlock())
+	conn, err := grpc.Dial("10.10.28.17:50051", grpc.WithInsecure(), grpc.WithBlock())
 	if err != nil {
 		log.Fatalln(err)
 	}
