@@ -1,6 +1,8 @@
-
 instalar protoc
 go install google.golang.org/protobuf/cmd/protoc-gen-go
 
 compilar:
 protoc --go_out=plugins=grpc:. lab1.proto --error_format=msvs
+
+instalar rabbitmq
+go get github.com/streadway/amqp

@@ -16,6 +16,7 @@
     camion: ## Build and run client.
 		go build -race -ldflags "-s -w" -o bin/camion camion/main.go
 		bin/camion
+		
 .PHONY: finanzas
     finanzas: ## Build and run client.
 		go build -race -ldflags "-s -w" -o bin/finanzas finanzas/main.go

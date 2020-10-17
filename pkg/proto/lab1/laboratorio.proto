@@ -5,10 +5,14 @@ import "google/protobuf/timestamp.proto";
 message Paquete{
     string id = 1;
     string tipo = 2;
-    int32 valor = 3;
+    string valor = 3;
     string tienda = 4;
     string destino = 5;
-    bool prioritario = 6;
+    string prioritario = 6;
+}
+
+message Paquetes{
+    repeated Paquete paquete = 1;
 }
 
 message Respuesta{
@@ -30,7 +34,7 @@ message EstadoCamion{
 }
 
 service EnvioPaquetes{
-    rpc GetList(Paquete) returns (Respuesta);
+    rpc GetList(Paquetes) returns (Respuesta);
     rpc Seguimiento(Paquete) returns (Estado);
     rpc HistorialCamion(EstadoCamion) returns (Respuesta);
 }
